@@ -8,9 +8,9 @@
     "react-scripts": "1.1.1"
   },
   "scripts": {
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
-    "copy": "cp -R ./../dist/components public/static/js"
+    "storybook": "start-storybook -p 9009",
+    "build-storybook": "build-storybook",
+    "copy": "cp -R ./../dist/* components"
   },
   "devDependencies": {
     "@storybook/react": "^3.3.15",
