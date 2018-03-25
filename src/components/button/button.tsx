@@ -8,7 +8,7 @@ import { Component } from '@stencil/core';
 export class Button {
   render() {
     return (
-      <button>Hello</button>
+      <button class="test">Hello</button>
     );
   }
 }
