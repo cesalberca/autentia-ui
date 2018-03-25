@@ -3,6 +3,9 @@
  * It contains typing information for all components that exist in this project
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
+
+import '@stencil/core';
+
 declare global {
   namespace JSX {
     interface Element {}
@@ -21,33 +24,28 @@ declare global {
 }
 
 
-import {
-  MyComponent as MyComponent
-} from './components/my-component/my-component';
-
 declare global {
-  interface HTMLMyComponentElement extends MyComponent, HTMLStencilElement {
+  interface HTMLAuButtonElement extends HTMLStencilElement {
+
   }
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  var HTMLAuButtonElement: {
+    prototype: HTMLAuButtonElement;
+    new (): HTMLAuButtonElement;
   };
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'au-button': HTMLAuButtonElement;
   }
   interface ElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'au-button': HTMLAuButtonElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'my-component': JSXElements.MyComponentAttributes;
+      'au-button': JSXElements.AuButtonAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyComponentAttributes extends HTMLAttributes {
-      'first'?: string;
-      'last'?: string;
-      
+    export interface AuButtonAttributes extends HTMLAttributes {
+
     }
   }
 }
